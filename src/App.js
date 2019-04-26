@@ -38,7 +38,7 @@ class App extends Component {
 
     if (
       this.state.expenseTotal +
-        expenseAmount * this.state.exchangeRates[expenseAmount] >=
+        expenseAmount * this.state.exchangeRates[expenseCurrency] >=
       1000
     ) {
       alert("Expense reports should be lower than $1000 CAD");
